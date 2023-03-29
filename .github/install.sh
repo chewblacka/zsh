@@ -33,9 +33,11 @@ antidote # directory
 
 for link in "${dotfiles[@]}"
 do
+  # if the dotfile doesn't exist create it
   if [ ! -e ".$link" ] then 
     ln -s "$link" ".$link"
   else
+    # otherwise if the file/dir doesn't exist link it to dotfile
     [ ! -e "$link" ] && ln -s ".$link" "$link"
   fi
 done
