@@ -6,7 +6,6 @@
 # 2. Then run this script:
 # ./zsh/.github/install.sh
 
-
 echo "Script to install my zsh files"
   
 ZDOTDIR="$HOME/zsh"
