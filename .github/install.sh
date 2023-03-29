@@ -6,13 +6,13 @@
 # 2. Then run this script:
 # ./zsh/.github/install.sh
 
-echo "Script to install my zsh files"
 
+echo "Script to install my zsh files"
+  
 ZDOTDIR="$HOME/zsh"
 cd "$ZDOTDIR" || exit
 echo "First we install antidote"
 git clone --depth=1 https://github.com/mattmc3/antidote.git "${ZDOTDIR:-~}/.antidote"
-
 echo
 echo "Next we write out ~/.zshenv to set ZDOTDIR to ~/zsh"
 ZSHENV="$HOME/.zshenv"
@@ -34,8 +34,11 @@ antidote # directory
 
 for link in "${dotfiles[@]}"
 do
-   # do whatever on "$i" here
-   ln -s  ".$link" "$link"
+  if [ ! -e ".$link" ] then 
+    ln -s "$link" ".$link"
+  else
+    [ ! -e "$link" ] && ln -s ".$link" "$link"
+  fi
 done
 
 echo "Done!"
