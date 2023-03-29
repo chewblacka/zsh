@@ -7,4 +7,6 @@ To install:
 git clone https://github.com/chewblacka/zsh.git zsh
 ```
 2. Then run the install script:
-`./zsh/.github/install.sh`
+```Sh
+./zsh/.github/install.sh
+```
