@@ -1,11 +1,11 @@
-antidote/
-.antidote
-p10k.zsh
-.p10k.zsh
-zsh_history
-.zsh_history
-.zcompdump*
-.zsh_plugins.txt
-.zsh_plugins.zsh
-.zshrc
+# Ignore everything
+*
+# Except ...
+# ... files we want to include:
+!.gitignore
+!zshenv
+!zsh_plugins.txt
+!zshrc
+!.github/install.sh
+!.github/README.md
 
