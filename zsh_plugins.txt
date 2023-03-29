@@ -1,0 +1,29 @@
+romkatv/powerlevel10k
+
+ohmyzsh/ohmyzsh path:lib
+# ohmyzsh/ohmyzsh path:plugins/z
+ohmyzsh/ohmyzsh path:plugins/command-not-found
+ohmyzsh/ohmyzsh path:plugins/sudo
+# tree/master/plugins/
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-syntax-highlighting
+#zsh-users/zsh-history-substring-search
+
+# A native-ZSH port of rupa/z used in oh-my-zsh
+agkozak/zsh-z
+# A fork of ohmyzsh/emacs.plugin.zsh with added features
+# flinner/zsh-emacs
+
+# Vi-mode plugin
+# jeffreytse/zsh-vi-mode
+
+# Added 30/06/20 for first time (supposed to be used instead of zsh-completions)
+# marlonrichert/zsh-autocomplete
+
+# Added 25/08/20
+marlonrichert/zsh-hist
+
+#histdb
+larkery/zsh-histdb
+
