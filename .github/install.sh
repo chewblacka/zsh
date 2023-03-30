@@ -16,7 +16,7 @@ echo
 echo "Next we write out ~/.zshenv to set ZDOTDIR to ~/zsh"
 ZSHENV="$HOME/.zshenv"
 # Delete existing zshenv file (if any)
-[ -f "$ZSHENV" ] && trash "$ZSHENV"
+[ -e "$ZSHENV" ] && trash "$ZSHENV"
 # Create new link to zshenv file in ZSH dir
 ln -s "$ZDOTDIR/zshenv" "$ZSHENV"
 
