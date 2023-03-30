@@ -11,7 +11,7 @@ git clone https://github.com/chewblacka/zsh.git zsh
 ```Sh
 ./zsh/.github/install.sh
 ```
-The install script will
+The install script will:
 - set `~/.zshenv` to point to the zsh directory
 - install the zsh pllugin-manager [antidote](https://getantidote.github.io/)
 which then installs the zsh plugins ... 
