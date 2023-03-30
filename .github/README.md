@@ -17,3 +17,4 @@ The install script will
 which then installs the zsh plugins including 
 [romkatv's powerlevel10k](https://github.com/romkatv/powerlevel10k) zsh theme.
 On first run p10k will go through it's setup script allowing you to customize the look & feel of zsh.
+p10k can be reconfigured at any time by running `p10k configure`
