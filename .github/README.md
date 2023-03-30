@@ -1,4 +1,5 @@
 # zsh
+My zsh dotfiles directory
 
 ## Install
 To install:
