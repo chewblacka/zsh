@@ -10,7 +10,9 @@ git clone https://github.com/chewblacka/zsh.git zsh
 ```Sh
 ./zsh/.github/install.sh
 ```
-The install script installs [antidote](https://getantidote.github.io/)
+The install script 
+- sets your ~/.zshenv to point to the zsh directory
+- installs [antidote](https://getantidote.github.io/)
 which then installs and manages my zsh plugins including 
 [romkatv's powerlevel10k](https://github.com/romkatv/powerlevel10k) zsh theme.
 On first run p10k will go through it's setup script allowing you to customize the look & feel of zsh.
