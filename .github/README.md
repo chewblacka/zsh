@@ -11,7 +11,7 @@ git clone https://github.com/chewblacka/zsh.git zsh
 ./zsh/.github/install.sh
 ```
 The install script 
-- sets your ~/.zshenv to point to the zsh directory
+- sets `~/.zshenv` to point to the zsh directory
 - installs [antidote](https://getantidote.github.io/)
 which then installs and manages the zsh plugins including 
 [romkatv's powerlevel10k](https://github.com/romkatv/powerlevel10k) zsh theme.
