@@ -6,7 +6,7 @@
 !zshenv
 !zsh_plugins.txt
 !zshrc
-#!.github/
+!.github/
 !.github/install.sh
 !.github/README.md
 
