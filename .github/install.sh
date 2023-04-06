@@ -18,7 +18,7 @@ ZSHENV="$HOME/.zshenv"
 # Delete existing zshenv file (if any)
 [ -e "$ZSHENV" ] && trash "$ZSHENV"
 # Create new link to zshenv file in ZSH dir
-ln -s "$ZDOTDIR/zshenv" "$ZSHENV"
+ln -s "zsh/zshenv" "$ZSHENV"
 
 echo
 echo "Finally we link files to their dot links"
