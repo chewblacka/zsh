@@ -5,6 +5,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Set history file otherwise defaults to ~/.zsh_history
+HISTFILE=$ZDOTDIR/.zsh_history
+HISTSIZE=999999 # HISTSIZE tells you how many entries to load into ram
+SAVEHIST=800000 # SAVEHIST tells you how big to keep hist file
+
 # source antidote
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 
