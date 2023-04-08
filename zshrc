@@ -15,13 +15,26 @@ path+=/home/$USER/bin
 #################### Aliases ####################  
 source $HOME/.alias
 
+
+################################################
+################ LOAD ANTIGEN  #################
+################################################  
+# source antidote
+source ${ZDOTDIR:-~}/.antidote/antidote.zsh
+# initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
+antidote load
+
+
+
 # agkozak/zsh-z options
 ZSHZ_EXCLUDE_DIRS=($HOME/temp)
 ZSHZ_NO_RESOLVE_SYMLINKS=1
 ZSHZ_DATA=$ZDOTDIR/.z
 
 
-#################### HISTORY ####################  
+################################################
+################### HISTORY ####################
+################################################  
 
 # Set history file otherwise defaults to ~/.zsh_history
 HISTFILE=$ZDOTDIR/.zsh_history
@@ -38,7 +51,11 @@ unsetopt share_history
 source "$(antidote home)/https-COLON--SLASH--SLASH-github.com-SLASH-larkery-SLASH-zsh-histdb/sqlite-history.zsh"
 autoload -Uz add-zsh-hook
 
-#################### CTRL KEYS ####################  
+
+
+###################################################
+#################### CTRL KEYS ####################
+###################################################  
 
 # zsh-users/zsh-history-substring-search
 # Crtl-j and Ctrk-k do substring search (port from Fish shell)
@@ -49,16 +66,12 @@ bindkey '^j' history-substring-search-down
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
-# source antidote
-source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 
-# initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
-antidote load
-
+################### P10K  #########################
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# direnv
+################### direnv ########################
 eval "$(direnv hook zsh)"
 
 
