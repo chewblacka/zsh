@@ -50,7 +50,6 @@ unsetopt share_history
 
 # histdb
 source "$(antidote home)/https-COLON--SLASH--SLASH-github.com-SLASH-larkery-SLASH-zsh-histdb/sqlite-history.zsh"
-autoload -Uz add-zsh-hook
 
 
 
