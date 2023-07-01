@@ -12,6 +12,10 @@ path+=/home/$USER/bin
 #################### Env Vars ####################  
 # export MERGE=vimdiff
 
+######## Set Default Editor
+(( ${+commands[hx]} )) && export EDITOR=hx
+(( ${+commands[helix]} )) && export EDITOR=helix
+
 #################### Aliases ####################  
 source $HOME/.alias
 
@@ -78,9 +82,5 @@ eval "$(direnv hook zsh)"
 
 
 ###### McFly History Search
-# First check if mcfly is installed
-# Then activate it
-if command -v mcfly &> /dev/null; then
-  eval "$(mcfly init zsh)"
-fi
-
+# If mcfly installed, activate it. Ctrl-r
+(( ${+commands[mcfly]} )) && eval "$(mcfly init zsh)"
