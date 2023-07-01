@@ -52,9 +52,6 @@ HISTORY_IGNORE='(ll|exit|whoami)'
 # Unset oh-my-zsh's option to share history across sessions
 unsetopt share_history
 
-# histdb
-HISTDB_FILE="$ZDOTDIR/histdb/zsh-history.db"
-source "$(antidote home)/https-COLON--SLASH--SLASH-github.com-SLASH-larkery-SLASH-zsh-histdb/sqlite-history.zsh"
 
 
 
