@@ -77,6 +77,10 @@ bindkey '^e' edit-command-line
 eval "$(direnv hook zsh)"
 
 
-
-
+###### McFly History Search
+# First check if mcfly is installed
+# Then activate it
+if command -v mcfly &> /dev/null; then
+  eval "$(mcfly init zsh)"
+fi
 
