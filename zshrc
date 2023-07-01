@@ -17,7 +17,7 @@ source $HOME/.alias
 
 
 ################################################
-################ LOAD ANTIGEN  #################
+############### LOAD ANTIDOTE  #################
 ################################################  
 # source antidote
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
