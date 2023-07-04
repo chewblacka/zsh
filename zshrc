@@ -64,7 +64,7 @@ unsetopt share_history
 bindkey '^k' history-substring-search-up
 bindkey '^j' history-substring-search-down
 
-# Edit line in vim with Ctrl-e:
+# Edit line in Editor with Ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
